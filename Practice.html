@@ -15,41 +15,46 @@ p {
   font-family: verdana;
   text-align: center;
 }
-  .center {
+
+.flex-container {
+    display: flex;
+    width:500px;
+    height:300px;
+}
+
+.flex-child {
+    flex: 1;
+    border: 2px solid yellow;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+} 
+ .center {
   margin: auto;
-  width: 350px;
+  width: 500px;
   border: 3px solid #8A2BE2;
   padding: 10px;
-}
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
 }
 </style>
 </head>
 <body>
 <div class="center">
-<h1>Wanna Practise??</h1>
+<div class="flex-container">
+
+  <div class="flex-child magenta">
+    <h1>Wanna Practise??</h1>
 <a href="https://jayaprada-devisetty.github.io/test/bestwebsites.html"><p>Then go to these!!</p></a>
   </div>
-  <div class="center">
-<h1>Wanna Challenge others??</h1>
-<a href="https://jayaprada-devisetty.github.io/test/bestwebsites.html"><p>Then go to these!!</p></a>
-  </div>
-  <div class="grid-container">
-
-    <div class="grid-child purple">
-        Grid Column 1
-    </div>
-
-    <div class="grid-child green">
-        Grid Column 2
-    </div>
   
+  <div class="flex-child green">
+    <h1>Wanna Challenge??</h1>
+<a href="https://jayaprada-devisetty.github.io/test/bestwebsites.html"><p>Then go to these!!</p></a>
+  </div>
+  
+</div>
 </div>
 
 
 </body>
 </html>
-
